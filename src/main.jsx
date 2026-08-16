@@ -1,9 +1,14 @@
 import React from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import ReactDOM from 'react-dom/client'
+import Dashboard from './Dashboard.jsx'
+import './index.css'
+import { registerSW } from 'virtual:pwa-register'
 
-createRoot(document.getElementById('root')).render(
+// Registers the Service Worker immediately for offline support
+registerSW({ immediate: true })
+
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Dashboard />
+  </React.StrictMode>,
 )
