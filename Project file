@@ -1,1 +1,23 @@
-package.json
+{
+  "short_name": "Swat",
+  "name": "Swat Security Console",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0a0e17",
+  "theme_color": "#0a0e17",
+  "display": "standalone",
+  "orientation": "portrait"
+}
+
+
